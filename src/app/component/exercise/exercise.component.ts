@@ -1,21 +1,23 @@
 import { Component, OnInit } from '@angular/core';
 import { Exercise } from '../../models/exercise.model'; // Adjust path if necessary
 import { ExerciseService } from '../../services/exercise.service';
-import {NgForOf} from "@angular/common"; // Adjust path if necessary
+import {NgForOf} from "@angular/common";
+import {Router, RouterLink} from "@angular/router"; // Adjust path if necessary
 
 @Component({
   selector: 'app-exercise',
   templateUrl: './exercise.component.html',
   standalone: true,
   imports: [
-    NgForOf
+    NgForOf,
+    RouterLink
   ],
   styleUrls: ['./exercise.component.css']
 })
 export class ExerciseComponent implements OnInit {
   exercises: Exercise[] = [];
 
-  constructor(private exerciseService: ExerciseService) { }
+  constructor(private exerciseService: ExerciseService,  private router: Router) { }
 
   ngOnInit(): void {
     this.loadExercises();
@@ -33,7 +35,7 @@ export class ExerciseComponent implements OnInit {
   }
 
   editExercise(exercise: Exercise): void {
-    // Implement edit functionality
+    this.router.navigate(['/update-exercise', exercise.exercise_Id]);
   }
 
   deleteExercise(exerciseId: number): void {

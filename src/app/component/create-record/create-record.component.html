@@ -1,0 +1,38 @@
+<div class="create-record">
+  <h2>Create Exercise Record</h2>
+
+  <form (submit)="createExerciseRecord()">
+    <div class="form-group">
+      <label for="exerciseId">Exercise:</label>
+      <select id="exerciseId" name="exerciseId" [(ngModel)]="exerciseRecord.exercise_Id" required>
+        <option *ngFor="let exercise of exercises" [value]="exercise.exercise_Id">{{ exercise.exercise_Name }}</option>
+      </select>
+    </div>
+    <div class="form-group">
+      <label for="dateRecorded">Date Recorded:</label>
+      <input type="date" id="dateRecorded" name="dateRecorded" [(ngModel)]="exerciseRecord.date_Recorded" required>
+    </div>
+    <div class="form-group">
+      <label for="sets">Sets:</label>
+      <input type="number" id="sets" name="sets" [(ngModel)]="exerciseRecord.sets" required>
+    </div>
+    <div class="form-group">
+      <label for="reps">Reps:</label>
+      <input type="number" id="reps" name="reps" [(ngModel)]="exerciseRecord.reps" required>
+    </div>
+    <div class="form-group">
+      <label for="weight">Weight (optional):</label>
+      <input type="number" id="weight" name="weight" [(ngModel)]="exerciseRecord.weight">
+    </div>
+    <div class="form-group">
+      <label for="durationMinutes">Duration (Minutes) (optional):</label>
+      <input type="number" id="durationMinutes" name="durationMinutes" [(ngModel)]="exerciseRecord.duration_Minutes">
+    </div>
+    <div class="form-group">
+      <label for="notes">Notes:</label>
+      <textarea id="notes" name="notes" [(ngModel)]="exerciseRecord.notes"></textarea>
+    </div>
+
+    <button type="submit">Create</button>
+  </form>
+</div>

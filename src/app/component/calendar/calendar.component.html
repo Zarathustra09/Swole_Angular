@@ -1,1 +1,14 @@
-<p>calendar works!</p>
+<div class="wrapper calendar-size">
+  <full-calendar
+    *ngIf="calendarOptions"
+    #fullcalendar
+    [options]="calendarOptions"
+  >
+    <ng-template #eventContent let-arg>
+      <div class="event-content">
+        <b>{{ arg.event.title }}</b><br>
+        <span>{{ arg.event.extendedProps.notes }}</span>
+      </div>
+    </ng-template>
+  </full-calendar>
+</div>

@@ -1,0 +1,65 @@
+.exercise-list {
+  font-family: Arial, sans-serif;
+  color: #333;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+}
+
+.exercise-list h2 {
+  color: #444;
+  margin-bottom: 20px;
+}
+
+.exercise-list .table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.exercise-list .table th,
+.exercise-list .table td {
+  padding: 10px;
+  border: 1px solid #ddd;
+  text-align: left;
+}
+
+.exercise-list .table th {
+  background-color: #f8f8f8;
+  color: #333;
+}
+
+.exercise-list .table tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.exercise-list button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  background-color: #007BFF;
+  color: #fff;
+  cursor: pointer;
+}
+
+.exercise-list button:hover {
+  background-color: #0056b3;
+}
+
+.exercise-list button:active {
+  background-color: #004085;
+}
+
+.exercise-list button:nth-child(2) {
+  background-color: #dc3545;
+  margin-left: 10px;
+}
+
+.exercise-list button:nth-child(2):hover {
+  background-color: #c82333;
+}
+
+.exercise-list button:nth-child(2):active {
+  background-color: #bd2130;
+}

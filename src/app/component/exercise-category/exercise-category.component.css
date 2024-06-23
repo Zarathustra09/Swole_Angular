@@ -1,0 +1,44 @@
+.exercise-category {
+  font-family: Arial, sans-serif;
+  color: #333;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+}
+
+.exercise-category h2 {
+  color: #444;
+  margin-bottom: 20px;
+}
+
+.exercise-category a {
+  color: #007BFF;
+  text-decoration: none;
+}
+
+.exercise-category a:hover {
+  color: #0056b3;
+}
+
+.exercise-category .table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.exercise-category .table th,
+.exercise-category .table td {
+  padding: 10px;
+  border: 1px solid #ddd;
+  text-align: left;
+}
+
+.exercise-category .table th {
+  background-color: #f8f8f8;
+  color: #333;
+}
+
+.exercise-category .table tr:nth-child(even) {
+  background-color: #f2f2f2;
+}

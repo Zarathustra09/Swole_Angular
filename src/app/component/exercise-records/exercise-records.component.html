@@ -1,1 +1,35 @@
-<p>exercise-records works!</p>
+<div class="exercise-records">
+  <h2>Exercise Records</h2>
+  <a routerLink="/create-record">Add Record</a>
+  <table class="table">
+    <thead>
+    <tr>
+      <th>Record ID</th>
+      <th>Exercise ID</th>
+      <th>Date Recorded</th>
+      <th>Sets</th>
+      <th>Reps</th>
+      <th>Weight</th>
+      <th>Duration (Minutes)</th>
+      <th>Notes</th>
+      <th>Action</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr *ngFor="let record of exerciseRecords">
+      <td>{{ record.record_Id }}</td>
+      <td>{{ record.exercise_Id }}</td>
+      <td>{{ record.date_Recorded | date }}</td>
+      <td>{{ record.sets }}</td>
+      <td>{{ record.reps }}</td>
+      <td>{{ record.weight }}</td>
+      <td>{{ record.duration_Minutes }}</td>
+      <td>{{ record.notes }}</td>
+      <td>
+        <button (click)="editExerciseRecord(record.record_Id)">Edit</button>
+        <button (click)="deleteExerciseRecord(record.record_Id)">Delete</button>
+      </td>
+    </tr>
+    </tbody>
+  </table>
+</div>

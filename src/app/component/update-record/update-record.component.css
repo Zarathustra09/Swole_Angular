@@ -1,0 +1,61 @@
+.update-record {
+  font-family: Arial, sans-serif;
+  color: #333;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+}
+
+.update-record h2 {
+  color: #444;
+  margin-bottom: 20px;
+}
+
+.update-record .form-group {
+  margin-bottom: 15px;
+}
+
+.update-record label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.update-record input,
+.update-record textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.update-record button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  background-color: #007BFF;
+  color: #fff;
+  cursor: pointer;
+}
+
+.update-record button:hover {
+  background-color: #0056b3;
+}
+
+.update-record button:active {
+  background-color: #004085;
+}
+
+.update-record button[type="button"] {
+  background-color: #dc3545;
+  margin-left: 10px;
+}
+
+.update-record button[type="button"]:hover {
+  background-color: #c82333;
+}
+
+.update-record button[type="button"]:active {
+  background-color: #bd2130;
+}

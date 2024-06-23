@@ -1,0 +1,48 @@
+.create-exercise {
+  font-family: Arial, sans-serif;
+  color: #333;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+}
+
+.create-exercise h2 {
+  color: #444;
+  margin-bottom: 20px;
+}
+
+.create-exercise .form-group {
+  margin-bottom: 15px;
+}
+
+.create-exercise label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.create-exercise input,
+.create-exercise select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.create-exercise button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  background-color: #007BFF;
+  color: #fff;
+  cursor: pointer;
+}
+
+.create-exercise button:hover {
+  background-color: #0056b3;
+}
+
+.create-exercise button:active {
+  background-color: #004085;
+}

@@ -7,8 +7,10 @@
       <input type="text" id="exerciseName" name="exerciseName" [(ngModel)]="exercise.exercise_Name" required>
     </div>
     <div class="form-group">
-      <label for="categoryId">Category ID:</label>
-      <input type="number" id="categoryId" name="categoryId" [(ngModel)]="exercise.category_Id" required>
+      <label for="categoryId">Category:</label>
+      <select id="categoryId" name="categoryId" [(ngModel)]="exercise.category_Id" required>
+        <option *ngFor="let category of categories" [value]="category.category_Id">{{ category.category_Name }}</option>
+      </select>
     </div>
 
     <button type="submit">Create</button>
