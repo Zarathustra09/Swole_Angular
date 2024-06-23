@@ -1,0 +1,25 @@
+<div class="exercise-list">
+  <h2>Exercise List</h2>
+
+  <table class="table">
+    <thead>
+    <tr>
+      <th>Exercise ID</th>
+      <th>Exercise Name</th>
+      <th>Category ID</th>
+      <th>Actions</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr *ngFor="let exercise of exercises">
+      <td>{{ exercise.exercise_Id }}</td>
+      <td>{{ exercise.exercise_Name }}</td>
+      <td>{{ exercise.category_Id }}</td>
+      <td>
+        <button (click)="editExercise(exercise)">Edit</button>
+        <button (click)="deleteExercise(exercise.exercise_Id)">Delete</button>
+      </td>
+    </tr>
+    </tbody>
+  </table>
+</div>

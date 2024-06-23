@@ -1,0 +1,16 @@
+<div class="create-exercise">
+  <h2>Create Exercise</h2>
+
+  <form (submit)="createExercise()">
+    <div class="form-group">
+      <label for="exerciseName">Exercise Name:</label>
+      <input type="text" id="exerciseName" name="exerciseName" [(ngModel)]="exercise.exercise_Name" required>
+    </div>
+    <div class="form-group">
+      <label for="categoryId">Category ID:</label>
+      <input type="number" id="categoryId" name="categoryId" [(ngModel)]="exercise.category_Id" required>
+    </div>
+
+    <button type="submit">Create</button>
+  </form>
+</div>

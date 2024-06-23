@@ -1,0 +1,12 @@
+<div class="create-category">
+  <h2>Create Exercise Category</h2>
+
+  <form (submit)="createCategory()">
+    <div class="form-group">
+      <label for="categoryName">Category Name:</label>
+      <input type="text" id="categoryName" name="categoryName" [(ngModel)]="newCategory.category_Name" required>
+    </div>
+
+    <button type="submit">Create</button>
+  </form>
+</div>

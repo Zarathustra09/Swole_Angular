@@ -1,0 +1,17 @@
+<div class="update-category">
+  <h2>Edit Exercise Category</h2>
+
+  <form (submit)="updateCategory()">
+    <div class="form-group">
+      <label for="categoryId">Category ID:</label>
+      <input type="number" id="categoryId" name="categoryId" [(ngModel)]="category.category_Id" readonly>
+    </div>
+    <div class="form-group">
+      <label for="categoryName">Category Name:</label>
+      <input type="text" id="categoryName" name="categoryName" [(ngModel)]="category.category_Name" required>
+    </div>
+
+    <button type="submit">Update</button>
+    <button type="button" (click)="deleteCategory()">Delete</button>
+  </form>
+</div>

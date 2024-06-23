@@ -1,0 +1,21 @@
+<div class="edit-exercise">
+  <h2>Edit Exercise</h2>
+
+  <form (submit)="updateExercise()">
+    <div class="form-group">
+      <label for="exerciseId">Exercise ID:</label>
+      <input type="number" id="exerciseId" name="exerciseId" [(ngModel)]="exercise.exercise_Id" readonly>
+    </div>
+    <div class="form-group">
+      <label for="exerciseName">Exercise Name:</label>
+      <input type="text" id="exerciseName" name="exerciseName" [(ngModel)]="exercise.exercise_Name" required>
+    </div>
+    <div class="form-group">
+      <label for="categoryId">Category ID:</label>
+      <input type="number" id="categoryId" name="categoryId" [(ngModel)]="exercise.category_Id" required>
+    </div>
+
+    <button type="submit">Update</button>
+    <button type="button" (click)="deleteExercise()">Delete</button>
+  </form>
+</div>

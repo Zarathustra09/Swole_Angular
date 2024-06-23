@@ -1,1 +1,23 @@
-<p>exercise-category works!</p>
+<div class="exercise-category">
+  <h2>Exercise Categories</h2>
+  <a routerLink="/create-category">Create New Category</a>
+  <table class="table">
+    <thead>
+    <tr>
+      <th>Category ID</th>
+      <th>Category Name</th>
+      <th>Action</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr *ngFor="let category of exerciseCategories">
+      <td>{{ category.category_Id }}</td>
+      <td>{{ category.category_Name }}</td>
+      <td>
+        <a routerLink="/update-category/{{ category.category_Id }}">Edit</a>
+
+      </td>
+    </tr>
+    </tbody>
+  </table>
+</div>
